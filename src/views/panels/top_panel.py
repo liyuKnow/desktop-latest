@@ -64,14 +64,11 @@ class TopPanel (wx.Panel):
 
     def onTestConnection(self, event):
         # TODO : CHECK IF THIS WORKS AS AN EXECUTABLE
-        # gives us our apps directory (where app.py is at)
+        # gives us our application root directory (where app.py is at)
         current_working_dir = os.getcwd()
 
         device_name = ""
         device_list = []
-
-        # user_directory = os.path.expanduser("~")  # dynamic user root folder
-        # adb_source = f"{user_directory}/Desktop/REPORT/latest/adb/adb.exe" # STATIC
 
         # ^ NEW ADB SOURCE
         adb_source = f"{current_working_dir}/adb/adb.exe"  # STATIC
