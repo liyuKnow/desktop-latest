@@ -12,7 +12,7 @@ class TopPanel (wx.Panel):
         self.createWidgets()
 
     def basicConfig(self):
-        self.SetBackgroundColour(wx.Colour("#fff"))
+        self.SetBackgroundColour(wx.Colour("#454545"))
 
     def createWidgets(self):
         # WIDGETS
