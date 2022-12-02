@@ -4,8 +4,8 @@
 
 Provided that
 
-1. you have python 3.10.7 installed on your machine and is availabale in the path (environment variable)
-2. you installed pipenv
+1. you have python 3.10.7 installed on your machine and is availabale in the path (environment variable),
+2. you installed pipenv and
 3. you are in the root directory
    run the following commands
 
