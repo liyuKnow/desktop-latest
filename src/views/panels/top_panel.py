@@ -12,7 +12,7 @@ class TopPanel (wx.Panel):
         self.createWidgets()
 
     def basicConfig(self):
-        self.SetBackgroundColour(wx.Colour("#454545"))
+        self.SetBackgroundColour(wx.Colour("#e5e5e5"))
 
     def createWidgets(self):
         # WIDGETS
@@ -28,7 +28,6 @@ class TopPanel (wx.Panel):
             size=(120, 60),
             label="",
         )
-        # ^ DEV
         self.conn_feedback_sTxt.SetFont(
             wx.Font(12, wx.DECORATIVE,  wx.NORMAL, wx.NORMAL, ))
 
@@ -80,6 +79,8 @@ class TopPanel (wx.Panel):
             devices_command, stdout=subprocess.PIPE, stderr=None, shell=True
         ) as process:
             output = process.communicate()[0].decode("utf-8")
+
+            print(output)
 
             if (output != None and "device" in output):
                 # SANITIZE THE TABS AND NEW LINES IN THE OUTPUT AND REMOVE HEADER

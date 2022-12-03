@@ -4,12 +4,17 @@ from .panels import TopPanel, MiddlePanel, BottomPanel
 
 
 # Conventions
-# Classes => Pascal case
-# variables  and files => snake case
-# Methods => camel case
+# -----------
+
+# Classes => PascalCase
+# variables  and files => snake_case
+# Methods => camelCase
+
 # wx arguments are user as a keyword argument (not positional)
-# WIDGETS at the top and sizers at the bottom
+# while creating UI WIDGETS are at the top and their SIZERS are at the bottom
 # widget variables have descriptive short suffixes ( wx.Button => *_btn )
+
+# local functions use named (keyword) arguments and have type hinting
 
 
 class MainWindow (wx.Frame):
